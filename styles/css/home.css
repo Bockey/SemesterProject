@@ -117,7 +117,7 @@ input{
     background-size: cover;
     padding-left: 5vw;
 }
-h3, h4, #second-par{
+h3, h4, .second-par{
     margin-left: 3vw;
     text-align: left;
     background-color: #FFF;
