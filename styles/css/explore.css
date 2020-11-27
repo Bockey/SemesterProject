@@ -1,0 +1,80 @@
+.explore-field-1{
+    background-image: url('../../images/explore-image.jpg');
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+}
+h1{
+    color: #FFFF00;
+    background-color: #433737;
+    padding: 10px 30px 10px 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+h3{
+    color: #FFFF00;
+    background-color: #433737;
+    font-family: 'Freckle Face';
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0;
+}
+.first-par{
+    color: #433737;
+    text-align: left;
+    width: 90%;
+    margin-left: 5%;
+}
+.kids-label, .teachers-label, .researchers-label{
+    font-family: 'Freckle Face';
+    font-size: 25px;
+    color: #000;
+    background-color: #FFFF00;
+    padding: 10px 35px 10px 35px;
+    position: absolute;
+    
+}
+.kids-card, .teachers-card, .researchers-card{
+    display: none;
+    position: absolute;
+    background-color: #FFF;
+    z-index: 2;
+}
+.kids-card{
+    top: 15vh;
+    left: 5vw;
+    width: 90vw;
+    height: 82vh;
+}
+.teachers-card{
+    top: 33vh;
+    left: 5vw;
+    width: 90%;
+    height: 65vh;
+}
+.researchers-card{
+    top: 18vh;
+    left: 5vw;
+    width: 90%;
+    height: 68vh;
+}
+#kids:checked ~ .kids-card , #teachers:checked ~ .teachers-card, #researchers:checked ~ .researchers-card{
+    display: block;
+}
+.kids-label{
+    top: 7vh;
+    right: 0;
+}
+.teachers-label{
+    top: 25vh;
+    right: 30%;
+    z-index: 1;
+}
+.researchers-label{
+    bottom: 5vh;
+    right: 10vw;
+}
