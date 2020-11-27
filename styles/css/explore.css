@@ -60,7 +60,7 @@ h3{
     top: 18vh;
     left: 5vw;
     width: 90%;
-    height: 68vh;
+    height: 60vh;
 }
 #kids:checked ~ .kids-card , #teachers:checked ~ .teachers-card, #researchers:checked ~ .researchers-card{
     display: block;
