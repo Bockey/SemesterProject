@@ -1,0 +1,27 @@
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    font-family: 'Freckle Face';
+    font-size: 25px;
+    letter-spacing: 0.1em;
+}
+h2{
+    font-size: 20px;
+}
+h3{
+    font-size: 25px;
+    color: #FF1C1C; 
+}
+h4{
+    font-size: 20px;
+    color: #FF1C1C; 
+}
+a{
+    font-size: 16px;
+}
+p{
+    font-size: 16px;
+}
