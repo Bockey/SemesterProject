@@ -38,6 +38,7 @@ h3{
     text-align: left;
     width: 90%;
     margin-left: 5%;
+    font-size: 2vh;
 }
 .kids-label, .teachers-label, .researchers-label{
     font-family: 'Freckle Face';
