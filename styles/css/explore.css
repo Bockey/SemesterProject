@@ -55,36 +55,36 @@ h3{
     z-index: 2;
 }
 .kids-card{
-    top: 17vh;
-    left: 5vw;
-    width: 90vw;
-    height: 80vh;
+    top: 17%;
+    left: 5%;
+    width: 90%;
+    height: 80%;
 }
 .teachers-card{
-    top: 33vh;
-    left: 5vw;
+    top: 33%;
+    left: 5%;
     width: 90%;
-    height: 65vh;
+    height: 65%;
 }
 .researchers-card{
-    top: 18vh;
-    left: 5vw;
+    top: 18%;
+    left: 5%;
     width: 90%;
-    height: 60vh;
+    height: 60%;
 }
 #kids:checked ~ .kids-card , #teachers:checked ~ .teachers-card, #researchers:checked ~ .researchers-card{
     display: block;
 }
 .kids-label{
-    top: 7vh;
+    top: 7%;
     right: 0;
 }
 .teachers-label{
-    top: 25vh;
+    top: 25%;
     right: 30%;
     z-index: 1;
 }
 .researchers-label{
-    bottom: 5vh;
-    right: 10vw;
+    bottom: 5%;
+    right: 10%;
 }
