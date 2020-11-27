@@ -1,5 +1,5 @@
-.explore-field-1{
-    background-image: url('../../images/explore-image.jpg');
+.get-involved-field-1{
+    background-image: url('../../images/get-involved-image.jpg');
     background-size: cover;
     height: 100vh;
     background-repeat: no-repeat;
@@ -40,7 +40,7 @@ h3{
     margin-left: 5%;
     font-size: 2vh;
 }
-.kids-label, .teachers-label, .researchers-label{
+.support-label, .internships-label, .volunteer-label{
     font-family: 'Freckle Face';
     font-size: 25px;
     color: #433737;
@@ -49,43 +49,43 @@ h3{
     position: absolute;
     
 }
-.kids-card, .teachers-card, .researchers-card{
+.support-card, .internships-card, .volunteer-card{
     display: none;
     position: absolute;
     background-color: #FFF;
     z-index: 2;
 }
-.kids-card{
-    top: 17%;
+.support-card{
+    top: 27%;
     left: 5%;
     width: 90%;
+    height: 70%;
+}
+.internships-card{
+    top: 17%;
+    right: 2%;
+    width: 45%;
     height: 80%;
 }
-.teachers-card{
-    top: 33%;
-    left: 5%;
-    width: 90%;
-    height: 65%;
+.volunteer-card{
+    top: 17%;
+    left: 2%;
+    width: 45%;
+    height: 80%;
 }
-.researchers-card{
-    top: 18%;
-    left: 5%;
-    width: 90%;
-    height: 60%;
-}
-#kids:checked ~ .kids-card , #teachers:checked ~ .teachers-card, #researchers:checked ~ .researchers-card{
+#support:checked ~ .support-card , #internships:checked ~ .internships-card, #volunteer:checked ~ .volunteer-card{
     display: block;
 }
-.kids-label{
-    top: 7%;
-    right: 1%;
+.support-label{
+    top: 17%;
+    right: 15%;
 }
-.teachers-label{
-    top: 25%;
-    right: 30%;
+.internships-label{
+    top: 28%;
+    left: 1%;
     z-index: 1;
 }
-.researchers-label{
+.volunteer-label{
     bottom: 5%;
-    right: 10%;
+    right: 5%;
 }
