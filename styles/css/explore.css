@@ -13,6 +13,16 @@ h1{
     top: 0;
     left: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+a{
+    color: #433737;
+    background-color: #FFFF00;
+    margin-top: 15px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
 }
 h3{
     color: #FFFF00;
@@ -45,10 +55,10 @@ h3{
     z-index: 2;
 }
 .kids-card{
-    top: 15vh;
+    top: 17vh;
     left: 5vw;
     width: 90vw;
-    height: 82vh;
+    height: 80vh;
 }
 .teachers-card{
     top: 33vh;
