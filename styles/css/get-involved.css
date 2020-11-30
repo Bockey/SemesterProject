@@ -89,3 +89,58 @@ h3{
     bottom: 5%;
     right: 5%;
 }
+@media (min-width:769px){
+    .get-involved-field-1{
+        background-image: url('../../images/involved-desktop-image.jpg');
+        background-size: cover;
+        height: 100vh;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+    }
+    h1{
+        color: #FFFF00;
+        background-color: #433737;
+        padding: 1% 10% 1% 10%;
+        font-size: 70px;
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+        position: static;
+    }
+    h1 a{
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        font-size: 25px;
+        margin: 0;
+    }
+    .support-label, .internships-label, .volunteer-label{
+        font-size: 30px;
+    }
+    .support-label:hover, .internships-label:hover, .volunteer-label:hover{
+        cursor: pointer;
+        font-size: 35px;
+    }
+    h3{
+        display: none;
+    }
+    .support-card, .internships-card, .volunteer-card{
+        border: 5px solid #FFFF00;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    #support:checked ~ .support-card , #internships:checked ~ .internships-card, #volunteer:checked ~ .volunteer-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .internships-card, .volunteer-card{
+        left: 25%;
+    }
+}
+@media (max-width:1080px) and (min-width:768px){
+    h1{
+        font-size: 50px;
+    }
+}
