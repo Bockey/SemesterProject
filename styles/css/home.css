@@ -156,6 +156,36 @@ h3, h4, .second-par{
 .home-field-4-desktop{
     display: none;
 }
+.contact-form{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#select-label, #name, #mail, #message{
+    position: static;
+    font-family: 'Roboto';
+    color: #433737;
+    margin: 2vh 0 0.5vh 0;
+}
+#full-name, #e-mail{
+    display: block;
+}
+h5{
+    font-family: 'Freckle Face';
+    font-size: 25px;
+    color: #433737;
+}
+button{
+    font-family: 'Freckle Face';
+    font-size: 20px;
+    color: #433737;
+    background-color: #00D6FF;
+    margin-top: 2vh;
+    border: none;
+    padding: 5px 10px;
+}
 @media (min-width:769px){
     
     .home-field-1{
@@ -314,6 +344,11 @@ h3, h4, .second-par{
 @media (min-height: 1359px){
     .first-par-desktop{
         font-size: 1vh;
+    }
+}
+@media  (max-height: 1200px){
+    h3{
+        top: 5%;
     }
 }
 @media (max-width:1080px) and (min-width:768px){
