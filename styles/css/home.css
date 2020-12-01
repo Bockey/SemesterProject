@@ -12,8 +12,10 @@
     display: flex;
     flex-direction: column;
     height: 55vh;
-    background-color:#433737; 
+    background-color:#FFF; 
     align-items: center;
+    border: 2vw solid #433737;
+    border-top: 22vh solid #433737;
 }
 section{
     display: inline;
@@ -34,6 +36,14 @@ h1{
 }
 h2, .first-par,a{
     color: #FFF;
+}
+.home-field-2 p, .home-field-2 h2{
+    color: #433737;
+}
+.home-field-2 a{
+    background-color: #433737;
+    text-decoration: none;
+    padding: 5px;
 }
 .first-par{
     width: 90%;
@@ -120,7 +130,6 @@ label{
 h3, h4, .second-par{
     margin-left: 3vw;
     text-align: left;
-    background-color: #FFF;
 }
 .second-par{
     margin-top: 0;
@@ -142,7 +151,7 @@ h3, h4, .second-par{
 #go-to-top-link{
     display: flex;
     align-items: center;
-    color: #FFFF00;
+    color: #FFF;
     text-decoration: none;
     margin-top: 10%;
     margin-bottom: 3%;
@@ -157,12 +166,13 @@ h3, h4, .second-par{
     display: none;
 }
 .contact-form{
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border: 5vh solid #433737;
+    border-top: none;
 }
 #select-label, #name, #mail, #message{
     position: static;
@@ -173,11 +183,6 @@ h3, h4, .second-par{
 #full-name, #e-mail{
     display: block;
 }
-h5{
-    font-family: 'Freckle Face';
-    font-size: 25px;
-    color: #433737;
-}
 button{
     font-family: 'Freckle Face';
     font-size: 20px;
@@ -187,8 +192,24 @@ button{
     border: none;
     padding: 5px 10px;
 }
+#contact-label{
+    display: block;
+    position: static;
+    text-align: center;
+    font-size: 2vh;
+    color: #433737;
+    font-family: 'Freckle Face';
+}
+#contact-label:hover{
+    cursor: pointer;
+}
+form{
+    display: none;
+}
+#contact:checked ~ form{
+    display: block;
+}
 @media (min-width:769px){
-    
     .home-field-1{
         display: flex;
         height: 100vh;
@@ -201,6 +222,25 @@ button{
     label{
         display: none;
     }
+    #select-label, #name, #mail, #message{
+        display: block;
+        font-size: 2vh;
+    }
+    button{
+        font-size: 35px;
+    }
+    button:hover{
+        font-size: 40px;
+        cursor: pointer;
+    }
+    textarea{
+        width: 40%;
+        height: 25%;
+    }
+    #full-name, #e-mail, #select-reason{
+        width: 200px;
+        height: 2vh;
+    }
     ul{
         display: flex;
         flex-wrap: wrap;
@@ -209,6 +249,9 @@ button{
         width: 100%;
         align-items: center;
         justify-content: space-evenly;
+    }
+    #menu-explore:hover, #menu-exhibition:hover, #menu-visit:hover, #menu-involved:hover{
+        color: #000;
     }
     #menu-explore, #menu-exhibition, #menu-visit, #menu-involved{
         position: static;
@@ -225,7 +268,7 @@ button{
         position: relative;
         top: -40%;
         margin: auto;
-        background-color: #433737;
+        background-color: rgba(67, 55, 55, 0.8);
         padding: 10px 15px 10px 15px;
         font-size: 70px;
     }
@@ -239,7 +282,7 @@ button{
         
     }
     .textbox{
-        background-color: #433737;
+        background-color: rgba(67, 55, 55, 0.8);
         width: 30%;
         height: 70%;
         border-radius: 30px;
@@ -275,8 +318,6 @@ button{
         align-items: center;
     }
     h3{
-        position: relative;
-        top: -20%;
         align-self: baseline;
         font-size: 58px;
     }
@@ -319,6 +360,9 @@ button{
     }
     #home-link-desktop a{
         margin: 0 30px 0 0;
+    }
+    #contact-label:hover{
+        color: #00D6FF;
     }
 }
 @media (max-width:1800px){
