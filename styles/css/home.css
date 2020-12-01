@@ -132,10 +132,32 @@ h3, h4, .second-par{
     text-align: left;
 }
 .second-par{
-    margin-top: 0;
     width: 75vw;
-    text-align: left;
 }
+.second-par::before{
+    margin-left: 0;
+    text-align: left;
+    animation: swap 15s infinite;
+    content: 'It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology will be delivering 3 lectures on the development of aeronautics and where the future lies in this exciting';
+}
+@keyframes swap{
+    0%{content: 'It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology will be delivering 3 lectures on the development of aeronautics and where the future lies in this exciting space.'}
+    33%{content: 'Get your family together for an exciting night in the museum as you sleep over beside dinosaurs and science displays. Bring your own sleeping bag and get ready to rough it as we go exploring the wonders of science.'}
+    66%{content: 'On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition is coming to the Community Science Museum. It’s a series of installations that allow visitors to experience the power of the elements as we harness them. From solar energy powering lighting, to ‘Wind Island’ that shows how turbines are able to use and control wind to create power.'}
+    100%{content: 'It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology will be delivering 3 lectures on the development of aeronautics and where the future lies in this exciting space'}
+  }
+  h4::before{
+    content: 'Visiting Professor Of Aeronautics';
+    text-align: left;
+    animation:  15s animate infinite;
+      
+  }
+  @keyframes animate{
+      0%{content: 'Visiting Professor Of Aeronautics';}
+      33%{content: 'Night in the Museum';}
+      66%{content: 'Energetica Exhibition on Loan';}
+      100%{content: 'Visiting Professor Of Aeronautics';}
+  }
 .home-field-4{
     background-color: #433737;
     display: flex;
@@ -293,6 +315,9 @@ form{
         left: 60%;
         top: 15%;
     }
+    .second-par::before{
+        font-size: 30px;
+    }
     #second-header-desktop{
         font-family: 'Freckle Face';
         color: #FD09FE;
@@ -323,10 +348,6 @@ form{
     }
     h4{
         font-size: 34px;
-        margin-left: 0;
-    }
-    .second-par{
-        font-size: 30px;
         margin-left: 0;
     }
     .home-field-4{
