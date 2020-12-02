@@ -13,89 +13,76 @@
     <link href="styles/css/visit.css" rel="stylesheet">
 </head>
 <body>
-    <div class="visit-field-1">
-        <h1>Visit <a href="index.html">Home</a></h1>
-        <div>
-            <label class="location-label" for="location">Location</label>
-            <input type="checkbox" name="location" id="location">
-            <div class="location-card">
-                <h3>Location</h3>
-                <p class="first-par">The museum is located at
-                    Fantasy Street 8, Fun City, Mars.
-                </p>    
-            </div>    
-        </div>   
-        <div>
-            <label class="admission-label" for="admission">Admission</label>
-            <input type="checkbox" name="admission" id="admission">
-            <div class="admission-card">
-                <h3>Admission</h3>
-                <p class="first-par">The entrance is free for all. 
-                    There are guided tours of the museum 
-                    that leave every hour. These tours are 
-                    70 NOK per person and include a handy 
-                    printed guide of the museum.
-                </p>    
-                <p class="first-par">    
-                    If you would like to organise a guided 
-                    tour for your group of 6 or more people, 
-                    please contact us to arrange the tour.                    
-                </p>
-            </div>    
-        </div>   
-        <div>
-            <label class="hours-label" for="hours">Hours</label>
-            <input type="checkbox" name="hours" id="hours">
-            <div class="hours-card">
-                <h3>Hours</h3>
-                <p class="first-par">Monday: Closed</p>
-                <p class="first-par">Tuesday: 10:00 – 16:00</p>
-                <p class="first-par">Wednesday: 10:00 – 16:00</p>
-                <p class="first-par">Thursday: 10:00 – 16:00</p>
-                <p class="first-par">Friday: 10:00 – 19:00</p>
-                <p class="first-par">Saturday: 9:00 – 16:00</p>
-                <p class="first-par">Sunday: 9:00 – 13:00</p>   
-            </div>    
-        </div>   
-        <div>
-            <label class="accessibility-label" for="accessibility">Accessibility</label>
-            <input type="checkbox" name="accessibility" id="accessibility">
-            <div class="accessibility-card">
-                <h3>Accessibility</h3>
-                <p class="first-par">The museum has 
-                    wheelchair accessibility 
-                    ramps. It also 
-                    has audio guides and
-                    braille display signs
-                    for the visually impaired.
-                </p>    
-            </div>    
-        </div>   
-        <div>
-            <label class="shop-label" for="shop">Shop</label>
-            <input type="checkbox" name="shop" id="shop">
-            <div class="shop-card">
-                <h3>Shop</h3>
-                <p class="first-par">Our shop offers a range of memorabilia 
-                    from the museum as well as great 
-                    gifts and activity packs that allow you 
-                    to continue to explore science even 
-                    after you’ve left the museum.
-                </p>    
-            </div>    
-        </div>   
-        <div>
-            <label class="food-label" for="food">Food and drink</label>
-            <input type="checkbox" name="food" id="food">
-            <div class="food-card">
-                <h3>Food and drink</h3>
-                <p class="first-par">There is a café attached to the museum 
-                    where you can get light lunches, soft 
-                    drinks, coffee, snacks and more.
-                </p>    
-            </div>    
-        </div>   
-    </div>
-    
+    <nav>
+        <label for="menu"><img src="images/menu-icon.png" alt="menu"></label>
+        <input type="checkbox" name="menu" id="menu">
+        <ul id="menu-list"> 
+            <li id="close-li"><a id="close" href="visit.html">X</a></li>
+            <li><a id="menu-home" href="index.html">Home</a></li>
+            <li><a id="menu-explore" href="explore.html">Explore</a></li>
+            <li><a id="menu-exhibition" href="exhibition-spaces.html">Exhibition Spaces</a></li>
+            <li><a id="menu-visit" href="visit.html">Visit</a></li>
+            <li><a id="menu-involved" href="get-involved.html">Get Involved</a></li>
+        </ul>
+    </nav> 
+    <main class="visit-field-1">
+        <h1>Visit</h1>
+        <span>
+            <h2>Location</h2>
+            <p class="first-par">The museum is located at
+                Fantasy Street 8, Fun City, Mars.
+            </p>        
+        </span>   
+        <span>
+            <h2>Admission</h2>
+            <p class="first-par">The entrance is free for all. 
+                There are guided tours of the museum 
+                that leave every hour. These tours are 
+                70 NOK per person and include a handy 
+                printed guide of the museum.
+            </p>    
+            <p class="first-par">    
+                If you would like to organise a guided 
+                tour for your group of 6 or more people, 
+                please contact us to arrange the tour.                    
+            </p>
+        </span>   
+        <span>
+            <h2>Hours</h2>
+            <p class="first-par">Monday: Closed</p>
+            <p class="first-par">Tuesday: 10:00 – 16:00</p>
+            <p class="first-par">Wednesday: 10:00 – 16:00</p>
+            <p class="first-par">Thursday: 10:00 – 16:00</p>
+            <p class="first-par">Friday: 10:00 – 19:00</p>
+            <p class="first-par">Saturday: 9:00 – 16:00</p>
+            <p class="first-par">Sunday: 9:00 – 13:00</p>   
+        </span>   
+        <span>
+            <h2>Accessibility</h2>
+            <p class="first-par">The museum has 
+                wheelchair accessibility 
+                ramps. It also 
+                has audio guides and
+                braille display signs
+                for the visually impaired.
+            </p>   
+        </span>   
+        <span>
+            <h2>Shop</h2>
+            <p class="first-par">Our shop offers a range of memorabilia 
+                from the museum as well as great 
+                gifts and activity packs that allow you 
+                to continue to explore science even 
+                after you’ve left the museum.
+            </p>   
+        </span>   
+        <span>
+            <h2>Food and drink</h2>
+            <p class="first-par">There is a café attached to the museum 
+                where you can get light lunches, soft 
+                drinks, coffee, snacks and more.
+            </p>      
+        </span>   
+    </main>
 </body>
 </html>
