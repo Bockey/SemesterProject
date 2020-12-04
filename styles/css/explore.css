@@ -8,11 +8,6 @@
 }
 h1{
     color: #FFFF00;
-    background-color: #433737;
-    width: 50vw;
-    padding: 10px 30px 10px 30px;
-    text-align: center;
-    margin-top: 15vh;
 }
 h2{
     color: #433737;
@@ -37,6 +32,9 @@ span{
 #menu-explore{
     text-decoration: underline;
 }
+#magnifier{
+    display: none;
+}
 @media (min-width:769px){
     body{
         background-image: url('../../images/explore-desktop-image.jpg');
@@ -56,6 +54,22 @@ span{
     }
     span{
         margin-bottom: 70px;
+        width: 40%;
+    }
+    #magnifier{
+        display: block;
+        position: absolute;
+        top:15vh; 
+        left: 5vw; 
+        width:10%;
+        animation: move 4s 1;
+    }
+    @keyframes move{
+        0%{top:15vh; left: 5vw; width:10%;}
+        25%{top:11vh; left: 20vw; width:40%;}
+        50%{top:11vh; left: 30vw; width:40%;}
+        75%{top:11vh; left: 40vw; width:40%;}
+        100%{top:15vh; left: 5vw; width:10%;}
     }
 }
 @media (max-width:1080px) and (min-width:768px){

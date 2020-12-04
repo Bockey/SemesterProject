@@ -8,11 +8,6 @@
 }
 h1{
     color: #FFFF00;
-    background-color: #433737;
-    width: 50vw;
-    padding: 10px 30px 10px 30px;
-    text-align: center;
-    margin-top: 15vh;
 }
 h2{
     color: #433737;
@@ -36,6 +31,9 @@ span{
 #menu-involved{
     text-decoration: underline;
 }
+#join{
+    display: none;
+}
 @media (min-width:769px){
     body{
         background-image: url('../../images/involved-desktop-image.jpg');
@@ -55,6 +53,26 @@ span{
     }
     span{
         margin-bottom: 70px;
+        width: 40%;
+    }
+    #join{
+        display: inline;
+        position: absolute;
+        left: 5vw;
+        top: 50vh;
+        color: #FD09FE;
+        font-size: 6vw;
+        font-family: 'Freckle Face';
+        animation: move 8s 1;
+    }
+    @keyframes move{
+        0%{left: 5vw; top: 50vh; opacity: 1;}
+        23%{left: 5vw; top: 50vh; opacity: 0;}
+        33%{left: 10vw; top: 32vh; opacity: 1; color: #FFFF00;}
+        56%{left: 10vw; top: 32vh; opacity: 0;}
+        66%{left: 7vw; top: 17vh; opacity: 1; color: #00D6FF}
+        89%{left: 7vw; top: 17vh; opacity: 0;}
+        100%{left: 5vw; top: 50vh; opacity: 1;}
     }
 }
 @media (max-width:1080px) and (min-width:768px){

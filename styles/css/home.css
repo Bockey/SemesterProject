@@ -18,6 +18,10 @@ h1{
     position: relative;
     bottom: -60%;
     z-index: 1;
+    width: auto;
+    margin-top: 0;
+    padding: 0;
+    animation: none;
 }
 #section-1{
     color: #FD09FE;
@@ -31,7 +35,9 @@ h1{
 #menu-home{
     text-decoration: underline;
 }
-
+#rocket{
+    display: none;
+}
 /*---Second section---*/
 
 .home-field-2{
@@ -191,7 +197,19 @@ form{
         font-size: 100px;
         align-items: center;
     }
-
+    #rocket{
+        display: block;
+        position: absolute;
+        top: 105vh;
+        left: 5vw;
+        animation: move 4s 1;
+        width: 10%;
+    }
+    @keyframes move{
+        0%{top:105vh; left: 5vw; }
+        50%{top:40vh; left: 5vw; }
+        100%{top:105vh; left: 5vw; }
+    }
     /*---Form---*/
 
     #select-label, #name, #mail, #message{

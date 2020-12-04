@@ -8,11 +8,6 @@
 }
 h1{
     color: #00D6FF;
-    background-color: #433737;
-    width: 50vw;
-    padding: 10px 30px 10px 30px;
-    text-align: center;
-    margin-top: 15vh;
 }
 h2{
     color: #433737;
@@ -36,6 +31,9 @@ span{
 #menu-visit{
     text-decoration: underline;
 }
+#welcome{
+    display: none;
+}
 @media (min-width:769px){
     body{
         background-image: url('../../images/visit-desktop-image.jpg');
@@ -55,6 +53,25 @@ span{
     }
     span{
         margin-bottom: 70px;
+        width: 40%;
+    }
+    #welcome{
+        display: inline;
+        font-size: 5vw;
+        color: #433737;
+        font-family: 'Freckle Face';
+        /*background-color: #433737;*/
+        padding: 0 0.5vw;
+        position: absolute;
+        left: 3vw;
+        top: 19vh;
+        transform: rotate(25deg);
+        animation: move 4s 1;
+    }
+    @keyframes move{
+        0%{left: 3vw; top: 19vh; font-size: 5vw;}
+        50%{left: 3vw; top: 19vh; font-size: 3vw; opacity: 0.3;}
+        100%{left: 3vw; top: 19vh; font-size: 5vw;}
     }
 }
 @media (max-width:1080px) and (min-width:768px){
