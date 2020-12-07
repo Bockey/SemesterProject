@@ -25,9 +25,11 @@ h1{
 }
 #section-1{
     color: #FD09FE;
+    margin-right: 0.5rem;
 }
 #section-2{
     color:#00D6FF;
+    margin-right: 0.5rem;
 }
 #section-3{
     color:#FFFF00;
@@ -138,7 +140,7 @@ h3, h4, .second-par{
 }
 #select-label, #name, #mail, #message{
     position: static;
-    font-family: 'Roboto';
+    font-family: 'Roboto', Helvetica;
     color: #433737;
     margin: 2vh 0 0.5vh 0;
 }
@@ -146,7 +148,7 @@ h3, h4, .second-par{
     display: block;
 }
 button{
-    font-family: 'Freckle Face';
+    font-family: 'Freckle Face', Tahoma;
     font-size: 20px;
     color: #433737;
     background-color: #00D6FF;
@@ -160,7 +162,7 @@ button{
     text-align: center;
     font-size: 3vh;
     color: #433737;
-    font-family: 'Freckle Face';
+    font-family: 'Freckle Face', Tahoma;
 }
 #contact-label:hover{
     cursor: pointer;
@@ -255,7 +257,7 @@ form{
         top: 15%;
     }
     #second-header-desktop{
-        font-family: 'Freckle Face';
+        font-family: 'Freckle Face', Tahoma;
         color: #FD09FE;
         font-size: 40px;
         display: block;
@@ -313,7 +315,7 @@ form{
 
     #logo1, #logo2, #logo3{
         display: inline;
-        font-family: 'Freckle Face';
+        font-family: 'Freckle Face', Tahoma;
         font-size: 40px;
         padding-right: 5px;
         text-decoration: none;
@@ -378,11 +380,6 @@ form{
          font-size: 60px;
      }
 }
-/*@media (max-width:840px) and (min-width:768px){
-    h1{
-        font-size: 50px;
-    }
-}*/
 @media (max-width: 1024px) and (orientation: landscape){
     .home-field-2{
         height: 70vh;

@@ -1,3 +1,6 @@
+
+/*++++++MOBILE VIEW++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
 .explore-field-1{
     background-image: url('../../images/explore-image.jpg');
     background-size: cover;
@@ -12,7 +15,7 @@ h1{
 h2{
     color: #433737;
     background-color: #FFFF00;
-    font-family: 'Freckle Face';
+    font-family: 'Freckle Face', Tahoma;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -24,7 +27,7 @@ h2{
     margin-left: 5%;
     font-size: 2vh;
 }
-span{
+article{
     width: 80%;
     background-color: rgba(255, 255, 255, 0.8);
     margin-bottom: 20px;
@@ -35,6 +38,9 @@ span{
 #magnifier{
     display: none;
 }
+
+/*++++++DESKTOP VIEW++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
 @media (min-width: 1025px){
     body{
         background-image: url('../../images/explore-desktop-image.jpg');
@@ -52,7 +58,7 @@ span{
     h2{
         font-size: 35px;
     }
-    span{
+    article{
         margin-bottom: 70px;
         width: 40%;
     }
@@ -72,6 +78,9 @@ span{
         100%{top:15vh; left: 5vw; width:10%;}
     }
 }
+
+/*---Other break points---*/
+
 @media (max-width:1080px) and (min-width:768px){
     h1{
         font-size: 50px;

@@ -1,3 +1,6 @@
+
+/*++++++MOBILE VIEW++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
 .get-involved-field-1{
     background-image: url('../../images/get-involved-image.jpg');
     background-size: cover;
@@ -12,7 +15,7 @@ h1{
 h2{
     color: #433737;
     background-color: #FFFF00;
-    font-family: 'Freckle Face';
+    font-family: 'Freckle Face', Tahoma;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -23,7 +26,7 @@ h2{
     margin-left: 5%;
     font-size: 2vh;
 }
-span{
+article{
     width: 80%;
     background-color: rgba(255, 255, 255, 0.9);
     margin-bottom: 20px;
@@ -34,6 +37,9 @@ span{
 #join{
     display: none;
 }
+
+/*++++++DESKTOP VIEW++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
 @media (min-width: 1025px){
     body{
         background-image: url('../../images/involved-desktop-image.jpg');
@@ -51,7 +57,7 @@ span{
     h2{
         font-size: 35px;
     }
-    span{
+    article{
         margin-bottom: 70px;
         width: 40%;
     }
@@ -62,7 +68,7 @@ span{
         top: 50vh;
         color: #FD09FE;
         font-size: 6vw;
-        font-family: 'Freckle Face';
+        font-family: 'Freckle Face', Tahoma;
         animation: move 8s 1;
     }
     @keyframes move{
@@ -75,6 +81,9 @@ span{
         100%{left: 5vw; top: 50vh; opacity: 1;}
     }
 }
+
+/*---Other break points---*/
+
 @media (max-width:1080px) and (min-width:768px){
     h1{
         font-size: 50px;

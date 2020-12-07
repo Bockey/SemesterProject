@@ -1,3 +1,6 @@
+
+/*++++++MOBILE VIEW++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
 .exhibition-field-1{
     background-image: url('../../images/exhibition-image.jpg');
     background-size: cover;
@@ -12,7 +15,7 @@ h1{
 h2{
     color: #433737;
     background-color: #FD09FE;
-    font-family: 'Freckle Face';
+    font-family: 'Freckle Face', Tahoma;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -24,7 +27,7 @@ h2{
     margin-left: 5%;
     font-size: 2vh;
 }
-span{
+article{
     width: 80%;
     background-color: rgba(255, 255, 255, 0.8);
     margin-bottom: 20px;
@@ -35,6 +38,9 @@ span{
 #lights{
     display: none;
 }
+
+/*++++++DESKTOP VIEW++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
 @media (min-width:1025px){
     body{
         background-image: url('../../images/exhibition-desktop-image.jpg');
@@ -52,7 +58,7 @@ span{
     h2{
         font-size: 35px;
     }
-    span{
+    article{
         margin-bottom: 70px;
         width: 40%;
     }
@@ -71,6 +77,9 @@ span{
         100%{left: 5vw; top: 15vh; opacity: 1;}
     }
 }
+
+/*---Other break points---*/
+
 @media (max-width:1080px) and (min-width:768px){
     h1{
         font-size: 50px;
