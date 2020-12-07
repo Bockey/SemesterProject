@@ -101,7 +101,7 @@ label{
     top:70vh;
     left: 20vw;
 } 
-@media (min-width:769px){
+@media (min-width:1025px){
 
 /*---Navigation desktop---*/
 
@@ -133,7 +133,7 @@ label{
 
 /*---h1 mobile version + animation---*/
 
-@media (max-width: 768px){
+@media (max-width: 1024px){
     h1{
         background-color: #433737;
         width: 50vw;

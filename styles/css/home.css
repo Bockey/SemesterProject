@@ -174,7 +174,7 @@ form{
 
 /*++++++DESKTOP VIEW++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-@media (min-width:769px){
+@media (min-width:1025px){
 
 /*---First section---*/
 
@@ -381,5 +381,19 @@ form{
 @media (max-width:840px) and (min-width:768px){
     h1{
         font-size: 50px;
+    }
+}
+@media (max-width: 1024px) and (orientation: landscape){
+    .home-field-2{
+        height: 70vh;
+    }
+    .home-field-3{
+        height: 110vh;
+    }
+    .home-field-4{
+        height: 140vh;
+    }
+    #contact-label{
+        font-size: 3vw;
     }
 }

@@ -35,7 +35,7 @@ span{
 #magnifier{
     display: none;
 }
-@media (min-width:769px){
+@media (min-width: 1025px){
     body{
         background-image: url('../../images/explore-desktop-image.jpg');
         background-size: cover;
@@ -75,5 +75,10 @@ span{
 @media (max-width:1080px) and (min-width:768px){
     h1{
         font-size: 50px;
+    }
+}
+@media (max-width: 1024px) and (orientation: landscape){
+    .first-par{
+        font-size: 16px;
     }
 }
