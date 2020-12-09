@@ -47,7 +47,7 @@ ul{
     background-color: #433737;
     margin: 0;
     padding: 0;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 2;
@@ -207,6 +207,7 @@ footer{
         display: none;
     }
      ul{
+        position: absolute;
         display: flex;
         flex-wrap: wrap;
         top: 0;
