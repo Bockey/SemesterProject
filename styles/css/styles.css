@@ -1,3 +1,6 @@
+
+/*++++++MOBILE VIEW++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
 /*---Global---*/
 
 body{
@@ -102,9 +105,101 @@ label{
     left: 20vw;
 } 
 
-/*---Navigation desktop---*/
+/*---Form---*/
+
+.contact-form{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5vh solid #433737;
+    border-top: none;
+}
+#select-label, #name, #mail, #message{
+    position: static;
+    font-family: 'Roboto', Helvetica;
+    color: #433737;
+    margin: 2vh 0 0.5vh 0;
+}
+#full-name, #e-mail{
+    display: block;
+}
+button{
+    font-family: 'Freckle Face', Tahoma;
+    font-size: 20px;
+    color: #433737;
+    background-color: #00D6FF;
+    margin-top: 2vh;
+    border: none;
+    padding: 5px 10px;
+}
+#contact-label{
+    display: block;
+    position: static;
+    text-align: center;
+    font-size: 3vh;
+    color: #433737;
+    font-family: 'Freckle Face', Tahoma;
+}
+#contact-label:hover{
+    cursor: pointer;
+}
+form{
+    display: none;
+}
+#contact:checked ~ form{
+    display: block;
+}
+
+/*---Footer---*/
+
+#logo{
+    margin-bottom: 2vh;
+}
+#logo1, #logo2, #logo3{
+    display: inline;
+    font-family: 'Freckle Face', Tahoma;
+    font-size: 3vh;
+    padding-right: 5px;
+    text-decoration: none;
+    margin: 0;
+}
+#logo1{
+    color: #FD09FE;
+}
+#logo2{
+    color: #00D6FF;
+}
+#logo3{
+    color: #FFFF00;
+}
+#social-networks a{
+    margin: 30px;
+}
+#home-link-desktop{
+    margin: 0 30px 0 0;
+}
+#contact-label:hover{
+    color: #00D6FF;
+}   
+#social-networks{
+    margin: 10vh 0 10vh 0;
+}
+footer{
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #433737;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*++++++DESKTOP VIEW++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 @media (min-width:1025px){
+
+    /*---Navigation desktop---*/
+
     label{
         display: none;
     }
@@ -129,6 +224,46 @@ label{
         padding: 10px 10px 10px 10px;
         margin: 0;
     }
+
+    /*---Form---*/
+
+    #select-label, #name, #mail, #message{
+        display: block;
+        font-size: 2vh;
+    }
+    button{
+        font-size: 35px;
+    }
+    button:hover{
+        font-size: 40px;
+        cursor: pointer;
+    }
+    textarea{
+        width: 40%;
+        height: 25%;
+    }
+    #full-name, #e-mail, #select-reason{
+        width: 200px;
+        height: 2vh;
+    }
+
+    /*---Footer---*/
+
+        footer{
+            display: flex;
+            flex-direction: row;
+            height: 10vh;
+            background-color: rgba(67, 55, 55, 0.8);
+            justify-content: space-between;
+            align-items: center;
+        }
+        #logo{
+            margin-bottom: 0;
+            margin-left: 30px;
+        }
+        #social-networks{
+            margin: 0;
+        }
 }
 
 /*---h1 mobile version + animation---*/

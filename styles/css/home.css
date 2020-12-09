@@ -40,6 +40,7 @@ h1{
 #rocket{
     display: none;
 }
+
 /*---Second section---*/
 
 .home-field-2{
@@ -123,56 +124,6 @@ h3, h4, .second-par{
 #go-to-top-link img{
     padding-left: 15px;
 }
-.home-field-4-desktop{
-    display: none;
-}
-
-/*---Form---*/
-
-.contact-form{
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 5vh solid #433737;
-    border-top: none;
-}
-#select-label, #name, #mail, #message{
-    position: static;
-    font-family: 'Roboto', Helvetica;
-    color: #433737;
-    margin: 2vh 0 0.5vh 0;
-}
-#full-name, #e-mail{
-    display: block;
-}
-button{
-    font-family: 'Freckle Face', Tahoma;
-    font-size: 20px;
-    color: #433737;
-    background-color: #00D6FF;
-    margin-top: 2vh;
-    border: none;
-    padding: 5px 10px;
-}
-#contact-label{
-    display: block;
-    position: static;
-    text-align: center;
-    font-size: 3vh;
-    color: #433737;
-    font-family: 'Freckle Face', Tahoma;
-}
-#contact-label:hover{
-    cursor: pointer;
-}
-form{
-    display: none;
-}
-#contact:checked ~ form{
-    display: block;
-}
 
 /*++++++DESKTOP VIEW++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
@@ -212,28 +163,7 @@ form{
         50%{top:40vh; left: 5vw; }
         100%{top:105vh; left: 5vw; }
     }
-    /*---Form---*/
-
-    #select-label, #name, #mail, #message{
-        display: block;
-        font-size: 2vh;
-    }
-    button{
-        font-size: 35px;
-    }
-    button:hover{
-        font-size: 40px;
-        cursor: pointer;
-    }
-    textarea{
-        width: 40%;
-        height: 25%;
-    }
-    #full-name, #e-mail, #select-reason{
-        width: 200px;
-        height: 2vh;
-    }
-
+  
 /*---Second section---*/
 
     .home-field-2-desktop{
@@ -303,44 +233,6 @@ form{
     .home-field-4{
         display: none;
     }
-    .home-field-4-desktop{
-        display: flex;
-        height: 10vh;
-        background-color: #433737;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-/*---Footer---*/
-
-    #logo1, #logo2, #logo3{
-        display: inline;
-        font-family: 'Freckle Face', Tahoma;
-        font-size: 40px;
-        padding-right: 5px;
-        text-decoration: none;
-        margin: 0;
-    }
-    #logo1{
-        color: #FD09FE;
-        margin-left: 30px;
-    }
-    #logo2{
-        color: #00D6FF;
-    }
-    #logo3{
-        color: #FFFF00;
-    }
-    #social-networks a{
-        margin: 30px;
-    }
-    #home-link-desktop{
-        margin: 0 30px 0 0;
-    }
-    #contact-label:hover{
-        color: #00D6FF;
-    }   
-}
 
 /*---Other break points---*/
 

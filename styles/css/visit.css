@@ -11,6 +11,7 @@
 }
 h1{
     color: #00D6FF;
+    margin-bottom: 5vh;
 }
 h2{
     color: #433737;
@@ -29,13 +30,19 @@ h2{
 article{
     width: 80%;
     background-color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 20px;
+    margin-bottom: 5vh;
 }
 #menu-visit{
     text-decoration: underline;
 }
 #welcome{
     display: none;
+}
+#social-networks{
+    display: none;
+}
+#logo{
+    margin: 0;
 }
 
 /*++++++DESKTOP VIEW++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -60,6 +67,15 @@ article{
     article{
         margin-bottom: 70px;
         width: 40%;
+    }
+    #social-networks{
+        display: block;
+    }
+    #logo{
+        margin-left: 30px;
+    }
+    footer{
+        margin-top: 5vh;
     }
     #welcome{
         display: inline;
