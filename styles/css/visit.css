@@ -1,7 +1,7 @@
 
 /*++++++MOBILE VIEW++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-.visit-field-1{
+main{
     background-image: url('../../images/visit-image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -52,7 +52,7 @@ article{
         background-image: url('../../images/visit-desktop-image.jpg');
         background-size: cover;
     }
-    .visit-field-1{
+    main{
         background: none;
         display: flex;
         flex-direction: column;

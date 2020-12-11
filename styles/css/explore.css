@@ -1,7 +1,7 @@
 
 /*++++++MOBILE VIEW++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-.explore-field-1{
+main{
     background-image: url('../../images/explore-image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -53,7 +53,7 @@ article{
         background-image: url('../../images/explore-desktop-image.jpg');
         background-size: cover;
     }
-    .explore-field-1{
+    main{
         background: none;
         display: flex;
         flex-direction: column;

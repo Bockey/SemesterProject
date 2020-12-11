@@ -2,9 +2,9 @@
 /*++++++MOBILE VIEW++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 
-/*---First section---*/
+/*---First section-Header---*/
 
-.home-field-1{
+header{
     display: flex;
     height: 80vh;
     width: auto;
@@ -129,9 +129,9 @@ h3, h4, .second-par{
 
 @media (min-width:1025px){
 
-/*---First section---*/
+/*---First section-Header---*/
 
-    .home-field-1{
+    header{
         display: flex;
         height: 100vh;
         width: auto;
@@ -226,6 +226,7 @@ h3, h4, .second-par{
     }
     .second-par{
         font-size: 1.5vh;
+        width: 55vw;
     }
 
 /*---Fourth section---*/

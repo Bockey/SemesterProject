@@ -1,7 +1,7 @@
 
 /*++++++MOBILE VIEW++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-.exhibition-field-1{
+main{
     background-image: url('../../images/exhibition-image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -53,7 +53,7 @@ article{
         background-image: url('../../images/exhibition-desktop-image.jpg');
         background-size: cover;
     }
-    .exhibition-field-1{
+    main{
         background: none;
         display: flex;
         flex-direction: column;
