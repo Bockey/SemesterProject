@@ -1,110 +1,59 @@
-
 /*++++++MOBILE VIEW++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-main{
-    background-image: url('../../images/visit-image.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+main {
+  background-image: url("../../images/visit-image.jpg");
 }
-h1{
-    color: #00D6FF;
-    margin-bottom: 5vh;
+h1 {
+  color: #00d6ff;
 }
-h2{
-    color: #433737;
-    background-color: #00D6FF;
-    font-family: 'Freckle Face', Tahoma;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin: 0;
+h2 {
+  background-color: #00d6ff;
 }
-.first-par{
-    color: #433737;
-    margin-left: 5%;
-    font-size: 2vh;
+#menu-visit {
+  text-decoration: underline;
 }
-article{
-    width: 80%;
-    background-color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 5vh;
-}
-#menu-visit{
-    text-decoration: underline;
-}
-#welcome{
-    display: none;
-}
-#social-networks{
-    display: none;
-}
-#logo{
-    margin: 0;
+#welcome {
+  display: none;
 }
 
 /*++++++DESKTOP VIEW++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-@media (min-width: 1025px){
-    body{
-        background-image: url('../../images/visit-desktop-image.jpg');
-        background-size: cover;
+@media (min-width: 1025px) {
+  body {
+    background-image: url("../../images/visit-desktop-image.jpg");
+  }
+  #welcome {
+    display: inline;
+    color: #433737;
+    font-family: "Roboto", Helvetica;
+    padding: 0 0.5vw;
+    position: absolute;
+    left: 3vw;
+    top: 19vh;
+    transform: rotate(25deg);
+    opacity: 0;
+    animation: move 3s 1;
+  }
+  @keyframes move {
+    0% {
+      opacity: 0.5;
+      left: 3vw;
+      top: 19vh;
+      font-size: 1px;
+      opacity: 0.3;
     }
-    main{
-        background: none;
-        display: flex;
-        flex-direction: column;
-        margin-top: 20vh;
+    50% {
+      opacity: 1;
+      left: 3vw;
+      top: 19vh;
+      font-size: 60px;
     }
-    h1{
-        display: none;
+    100% {
+      opacity: 0.5;
+      left: 3vw;
+      top: 19vh;
+      font-size: 1px;
+      opacity: 0.3;
     }
-    h2{
-        font-size: 35px;
-    }
-    article{
-        margin-bottom: 70px;
-        width: 40%;
-    }
-    #social-networks{
-        display: block;
-    }
-    #logo{
-        margin-left: 30px;
-    }
-    footer{
-        margin-top: 5vh;
-    }
-    #welcome{
-        display: inline;
-        font-size: 5vw;
-        color: #433737;
-        font-family: 'Freckle Face', Tahoma;
-        padding: 0 0.5vw;
-        position: absolute;
-        left: 3vw;
-        top: 19vh;
-        transform: rotate(25deg);
-        animation: move 4s 1;
-    }
-    @keyframes move{
-        0%{left: 3vw; top: 19vh; font-size: 5vw;}
-        50%{left: 3vw; top: 19vh; font-size: 3vw; opacity: 0.3;}
-        100%{left: 3vw; top: 19vh; font-size: 5vw;}
-    }
-}
-
-/*---Other break points---*/
-
-@media (max-width:1080px) and (min-width:768px){
-    h1{
-        font-size: 50px;
-    }
-}
-@media (max-width: 1024px) and (orientation: landscape){
-    .first-par{
-        font-size: 16px;
-    }
+  }
 }

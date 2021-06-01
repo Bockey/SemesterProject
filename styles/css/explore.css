@@ -1,109 +1,60 @@
-
 /*++++++MOBILE VIEW++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-main{
-    background-image: url('../../images/explore-image.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+main {
+  background-image: url("../../images/explore-image.jpg");
 }
-h1{
-    color: #FFFF00;
-    margin-bottom: 5vh;
+h1 {
+  color: #ffff00;
 }
-h2{
-    color: #433737;
-    background-color: #FFFF00;
-    font-family: 'Freckle Face', Tahoma;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    font-size: 25px;
-    margin: 0;
+h2 {
+  background-color: #ffff00;
 }
-.first-par{
-    color: #433737;
-    margin-left: 5%;
-    font-size: 2vh;
+#menu-explore {
+  text-decoration: underline;
 }
-article{
-    width: 80%;
-    background-color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 5vh;
-}
-#menu-explore{
-    text-decoration: underline;
-}
-#magnifier{
-    display: none;
-}
-#social-networks{
-    display: none;
-}
-#logo{
-    margin: 0;
+#magnifier {
+  display: none;
 }
 
 /*++++++DESKTOP VIEW++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-@media (min-width: 1025px){
-    body{
-        background-image: url('../../images/explore-desktop-image.jpg');
-        background-size: cover;
+@media (min-width: 1025px) {
+  body {
+    background-image: url("../../images/explore-desktop-image.jpg");
+  }
+  #magnifier {
+    display: block;
+    position: absolute;
+    top: 18vh;
+    left: 15vw;
+    width: 10%;
+    animation: move 3s 1;
+  }
+  @keyframes move {
+    0% {
+      top: 18vh;
+      left: 15vw;
+      width: 10%;
     }
-    main{
-        background: none;
-        display: flex;
-        flex-direction: column;
-        margin-top: 20vh;
+    25% {
+      top: 22vh;
+      left: 30vw;
+      width: 20%;
     }
-    h1{
-        display: none;
+    50% {
+      top: 22vh;
+      left: 45vw;
+      width: 20%;
     }
-    h2{
-        font-size: 35px;
+    75% {
+      top: 22vh;
+      left: 60vw;
+      width: 20%;
     }
-    article{
-        margin-bottom: 70px;
-        width: 40%;
+    100% {
+      top: 18vh;
+      left: 15vw;
+      width: 10%;
     }
-    #social-networks{
-        display: block;
-    }
-    #logo{
-        margin-left: 30px;
-    }
-    footer{
-        margin-top: 5vh;
-    }
-    #magnifier{
-        display: block;
-        position: absolute;
-        top:15vh; 
-        left: 5vw; 
-        width:10%;
-        animation: move 4s 1;
-    }
-    @keyframes move{
-        0%{top:15vh; left: 5vw; width:10%;}
-        25%{top:11vh; left: 20vw; width:40%;}
-        50%{top:11vh; left: 30vw; width:40%;}
-        75%{top:11vh; left: 40vw; width:40%;}
-        100%{top:15vh; left: 5vw; width:10%;}
-    }
-}
-
-/*---Other break points---*/
-
-@media (max-width:1080px) and (min-width:768px){
-    h1{
-        font-size: 50px;
-    }
-}
-@media (max-width: 1024px) and (orientation: landscape){
-    .first-par{
-        font-size: 16px;
-    }
+  }
 }
