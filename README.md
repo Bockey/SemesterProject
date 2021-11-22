@@ -1,6 +1,6 @@
 # SemesterProject
 
-##Requirements
+## Requirements
 The site must be have a design that appeals to the target audience.
 The site must have at least 4-6 pages.
 Compositional principles, typography, and color schemes must be considered.
